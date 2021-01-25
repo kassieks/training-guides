@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="uft-8">
+    <meta name ="viewport" content="width=device-width, initial=scale=1.0">
+    <title>Podstawy HTML</title>
+</head> 
+<body>
+    <!--To przykład komentarza. Po co są komentarze? Po to żeby łatwiej się połapać o co chodzi w naszym kodzie. Pomoże to i nam i innym osobom, które będą z nim pracowały .-->
+    <h1>Jak łatwo zrobić stronkę internetową używając podstaw HTML...</h1> 
+    <h2>Ilustrowane przykładem tej strony. Jak to ma działać?
+    </h2>
+    <p>Pytasz <q> Jak to działa?</q> To proszę, ładny przykład dwóch sposobów używania cytatów. Ten pierwszy to cytat w tekście. A tu niżej mamy blok z cytatem:  
+    <blockquote>
+        Pomysł jest taki: ta strona będzie łatwym do zrozumienia przykładem prostych podstaw HTML. Będzie też wersja z CSS link:     i wersja z JavaScript link:     
+        Na tej stronie jest tylko HTML. Aby zobaczyć jak ta strona jest zbudowana otwórz opcję "inspekt" w używanej przez Ciebie przeglądarce. Pokaże Ci to całą strukturę strony. Możesz klikać na poszczególny element, żeby zobaczyć jak ten konkretny element wygląda na stronie. </blockquote>
+        
+    Tu zdjęcie, żeby zilustrować o co mi chodzi. Bo jak mówią zdjęcie jest warte 1000 słów:</p>
+<!--TODO: wstawić zdjęcie--> 
+    <p>A oto przykład linii oddzielającej sekcję (użyłam tu symbolu strzałka, bardzo ważne jest, żeby pamiętać o wstawieniu średnika, z ang. semicolon, czyli coś takiego ; na końcu kodu symbolu. Więcej symboli można znaleźć tutaj link:)
+    &darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;</p> 
+<!--TODO: WSTAWIĆ LINK--> 
+    <hr>
+    <h2>To jeszcze dodam listy</h2>
+      <h3>Zacznę od &lt;ul&gt; czyli <mark><em>Unordered List</em> </mark>, a wygląda ona tak:</h3>
+      <ul>
+        <li>pierwsza rzecz</li>
+        <li>druga rzecz</li>
+        <li>trzecia rzecz</li>
+      </ul>
+      <h3>To teraz &lt;ol&gt; <mark><em>Ordered List</em></mark>, która wygląda tak:</h3>
+      <ol>
+        <li>pierwsza rzecz</li>
+        <li>druga rzecz</li>
+        <li>trzecia rzecz</li>
+      </ol>
+    <hr>
+
+    <h2>A teraz przykład tego jak działa &lt;pr&gt;: </h2>
+<!--TODO: WLEPIĆ JAKIEŚ ZWIERZĄTKO TEKSTOWE-->
+    <pre>   
+        Wszystko tu mieści się w pre tagach, to pozwala mi na dowolne    
+        wręcz chaotyczne formatowanie tekstu.
+        🖊   llllll  lllll
+        lllll llll llll
+             llllllll
+    </pre>
+    <hr>
+    <h2>Attributes: Czym są i jak je stosować:</h2>
+    <p>
+    To teraz trochę o attributes. Postanowiłam, że będę używać angielskich nazw ponieważ i tak musicie je znać po ang. 
+    Czym są attributes? To takie "usprawniacze" elementów. Dzięki nim nasze elementy dostają super moce. 
+    Zobaczmy jak to działa. Weźmy przykład naszej &lt;ol&gt; listy z wcześniej:
+    </p>
+    <ol>
+        <li>pierwsza rzecz</li>
+        <li>druga rzecz</li>
+        <li>trzecia rzecz</li>
+      </ol>
+    <p>Powiedzmy, że chciałabym, żeby ta lista zaczynała się od numerku 4,a nie jeden..no bo dlaczego nie. Wykorzystamy tu super moc attribute o nazwie <em>start:</em> </p>
+    <ol start="4">
+      <li>pierwsza rzecz</li>
+      <li>druga rzecz</li>
+      <li>trzecia rzecz</li>
+    </ol>
+    <p>Jak pokazuje nam przykład <em>start</em> Attributes są bardzo przydatne do manipulacji elementami HTML. wraz z Tags tworzą one język HTML. </p>
+    <p>Attributes używane są do definiowania Tags. Używamy ich w opening tag czyli tagu otwierającym. Zasada jest taka, że robimy jedną spację i wpisujemy nazwę attribute. Większość attribute składa się z pary nazwa-wartość. Jak w naszym przykładzie: start="4". Nie robimy odstępów, ważne jednak żeby pamiętać, że wartość wpisujemy w cudzysłowie "". Każdy tag może mieć więcej niż jeden attribute. </p>
+
+    <h3>Kilka przykładów najczęściej używanych Attributes:</h3>
+    <ul>
+      <li><strong>ID</strong> attribute - jest on używany do - jak nazwa wskazuje (surprise, surprise 😉 ) - identyfikacji czegoś np. paragrafu, żeby później coś z nim zrobić np. zrobić link do innego elementu w HTML lub dodać stylizację, używając CSS (więcej na ten temat w przewodniku po CSS link: ),Teraz chcę, żebyście pamiętali o tym, że każda nazwa id musi być unikalna. Żeby nie było niepotrzebnych kłopotów. Np. jeżeli nazwiemy coś "ważny_paragraf" to wszystko co będzie miało tą nazwę będzie objęte naszymi zmianami. Każdy tag może mieć tylko jeden ID.  </li><br>
+      <li><strong>CLASS</strong> attribute. Jest bardzo podobny do ID. To taki wielki worek na wszystkie pojedyncze ID woreczki. Powiedzmy, że robisz stronkę z przepisami i chcesz, żeby one wszystkie wyglądały tak samo. Dodajesz więc CLASS "przepisy". Różnica polega na tym, że Tag może mieć więcej niż jeden CLASS. Konkretniejsze przykłady będą w fundamentach CSS.  </li> <br> 
+      <li><strong>LANG</strong> attribute. Kolejnym ważnym attribute, o którym warto wspomnieć to 'lang'. Stosuje się go do sprecyzowania języka tekstu danego elementu. Jest to ważne ponieważ na podstawie tego przeglądarki adaptują swoje ustawienia, co usprawnia doświadczenie użytkownika i jest szczególnie pomocne dla użytkowników korzystających z np. czytników ekranu.</li> <br>
+    <li><strong>ALT</strong> attribute. Warto też wspomnieć o attribute o nazwie 'alt' Stosuje się go do opisywania obrazków na stronie. Jeżeli ktoś ich nie widzi, bo np. źle się załadują, albo ktoś ma problemy ze wzrokiem, będzie w stanie z alt tekstu dowiedzieć się co powinno w tym miejscu się znajdować. Pomaga to też w pozycjonowaniu strony, ale o tym później. Przykład w obrazkach na tej stronie. </li></ul>
+<!--TODO dodać link do projektu CSS-->
+      <h3>Global i Non-Global Attributes:</h3>
+   <p>Attributes możemy podzielić na dwie grupy: <strong>GLOBAL</strong> czyli takie, które mogą być stosowane z każdym tag. Oto lista z przykładami: <br>
+  <strong>NON-GLOBAL</strong> czyli takie, które używa się z niektórymi tags. List po polsku z wyjaśnieniami tu: </p>
+<!--TODO dodać linki do list z przykładami global i non-global attributes po polsku-->
+<hr>
+<h2>Elementy/Znaczniki Semantyczne HTML</h2>
+
+<h3>Co to są elementy semantyczne?</h3>
+<p></p>
+<h3>Dlczego semantyka jest taka ważna?</h3>
+<p>Pomaga ona lepiej zrozumieć Twoją stronę nie tylko    osobie pracującej nad nią, 
+  ale również przeglądarce a co z tym się wiąże użytkownikowi. W szczególności jest to ważne jeśli chodzi o dostosowanie strony dla użytkowników wymagających stosowania technologii asystującej np. czytnika ekranu. Jeżeli tekst jest zaznaczony jako &lt; strong &gt; to zostanie przeczytany "silniejszym" głosem. Stosowanie odpowiednich attributes semantycznych pomaga też taki urządzeniom w czytaniu skrótów dzięki attribute &lt; abbr &gt;.
+  
+</p>
+</body> 
+</html>
