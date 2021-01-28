@@ -34,16 +34,22 @@
         <li>druga rzecz</li>
         <li>trzecia rzecz</li>
       </ol>
-    <hr>
-
+    <hr>z
     <h2>A teraz przykład tego jak działa &lt;pr&gt;: </h2>
-<!--TODO: WLEPIĆ JAKIEŚ ZWIERZĄTKO TEKSTOWE-->
     <pre>   
         Wszystko tu mieści się w pre tagach, to pozwala mi na dowolne    
-        wręcz chaotyczne formatowanie tekstu.
-        🖊   llllll  lllll
-        lllll llll llll
-             llllllll
+        wręcz chaotyczne formatowanie tekst
+                         ____
+                   .---'-    \
+      .-----------/           \
+     /           (         ^  |   __
+&   (             \        O  /  / .'
+'._/(              '-'  (.   (_.' /
+     \                    \     ./
+      |    |       |    |/ '._.'
+       )    ).____\|    |
+   .  /    /       (    | 
+  \|, '_:::\  . ..  '_:::\ ..\).
     </pre>
     <hr>
     <h2>Attributes: Czym są i jak je stosować:</h2>
@@ -88,16 +94,27 @@
 </p>
 <hr>
 <h2>Podstawowy szkielet strony</h2>
-<p>Jak już wspomnieliśmy semantyka jest ważna. Mamy specjalne tagi, które używamy do stworzenia struktury naszej strony:</p>
+<p>Jak już wspomnieliśmy semantyka jest ważna. Mamy specjalne tagi/znaczniki (<em>tags</em>), które używamy do stworzenia struktury naszej strony:</p>
 <!--TODO dodać zjecie szkieletu HTML(niebieskie)-->
 <h3>Omówienie elementów podstawowego szkieletu strony:</h3>
 <ol>
-  <li><strong>&lt;header&gt;</strong>- sekcja ta odnosi się do początku dokumentu lub poszczególnej sekcji. Ta sekcja zazwyczaj wprowadza nas do tego o czym jest strona/artykuł. </li><br>
-    <li><strong>&lt;nav&gt;</strong> - element ten odnosi się do sekcji nawigacji. Czyli naszego menu/spis treści strony. </li><br>
-    <li>&lt;article&gt; </li>
-    <li>&lt;section&gt;</li>
-    <li>&lt;aside&gt;</li>
-    <li>&lt;footer&gt;</li>
-</ol>
+  <li><strong>&lt;header&gt;</strong> - nagłówek, sekcja ta odnosi się do początku dokumentu lub poszczególnej sekcji. Ta sekcja zazwyczaj wprowadza nas do tego o czym jest strona/artykuł. Powinna ona zawierać: 
+    <ul>
+      <li>logo (zazwyczaj linkuje się je do głównej strony) </li>
+      <li>menu (które powinno być oznakowane jako nav)</li>
+    </ul> 
+  </li><br>
+    <li><strong>&lt;nav&gt;</strong> - navigacja,  element ten odnosi się do sekcji nawigacji. Czyli naszego menu/spis treści strony z linkami. Może występować kiklukrotnie na stronie </li><br>
+    <li><strong>&lt;article&gt;</strong> - artykół, ta część odnosi się do treści naszej strony. Powinna ona działać tak, że po skopiowaniu artykuł jest on zrozumiały sam w sobie. </li> <br>
+    <li><strong>&lt;section&gt;</strong> - sekcja, odnosi się do sekcji strony. <abbr title="na przykład">Np.</abbr> strona o samochodach może mieć kilka sekchi z nagłówkiem "samochody sportowe". Element ten pomaga segmentować naszą stronę. </li> <br>
+    <li><strong>&lt;aside&gt;</strong> - panel boczny, często stosowany w szablonach. Może występować kilka razy</li><br>
+    <li><strong>&lt;footer&gt;</strong> - stopka, mieści się na samym dole naszej strony i zawiera infomacje dotyczące autora strony, regulamin, kontakt <abbr title="i tym podobne"></abbr>itp.  </li><br>  
+  </ol>
+  <h3>Inne znaczniki/tagi HTML:</h3>
+   <details>
+     <summary>Innym ciekawym znacznikiem/tagiem jest &lt;<strong>details</strong>&gt; (naciśnij na trójkącik  żeby dowiedzieć się więcej...</summary> Jak ukazuje ten przykład pozwala nam to na rozwinięcie daleszej treści bez konieczności stosowania JavaScript
+  </details> 
+
+  
 </body> 
 </html>
