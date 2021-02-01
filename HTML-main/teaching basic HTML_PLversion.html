@@ -7,7 +7,9 @@
 </head> 
 <body>
     <!--To przykład komentarza. Po co są komentarze? Po to żeby łatwiej się połapać o co chodzi w naszym kodzie. Pomoże to i nam i innym osobom, które będą z nim pracowały .-->
+    <header> <!--wygląda jakby ten header nic nie robił,ro tylko pozory. Pomaga on przeglądarce 'zrozumież naszą stronę'-->
     <h1>Jak łatwo zrobić stronkę internetową używając podstaw HTML...</h1> 
+  </header>
     <h2>Ilustrowane przykładem tej strony. Jak to ma działać?
     </h2>
     <p>Pytasz <q> Jak to działa?</q> To proszę, ładny przykład dwóch sposobów używania cytatów. Ten pierwszy to cytat w tekście. A tu niżej mamy blok z cytatem:  
@@ -34,7 +36,7 @@
         <li>druga rzecz</li>
         <li>trzecia rzecz</li>
       </ol>
-    <hr>z
+    <hr>
     <h2>A teraz przykład tego jak działa &lt;pr&gt;: </h2>
     <pre>   
         Wszystko tu mieści się w &lt;pre&gt; tagach, to pozwala mi na dowolne    
@@ -118,7 +120,8 @@
   <p>Nie da się omawiać tagów/znaczników bez omówienia <strong>&lt;div&gt;</strong> i <strong>&lt;span&gt;</strong>, chyba najczęściej stosowanych elementów HTML. Z pojawieniem się znaczników semantycznych w HTML5 ich popularność powinna zmaleć (powinno się częściej używać dostępnych znaczników semantycznych, niż ogólnikowego div.), aczkolwiek nadal są to podstawowe elementy stosowane do formatowania tekstu </p>
   <h3>Czym się różni <strong>&lt;div&gt;</strong> od <strong>&lt;span&gt;</strong>?</h3>
   <p><strong>&lt;div&gt;</strong> to tzw. blokowy element z ang. <span lang='en-GB'>'block level element'</span> oznacza to, że może on w sobie zawierać inne elementy i stosuje piszę się go w nowej linii kodu np.</p>
-  <div class='sampleDiv'><h4>To jest przykład bloku, który nazwę sobie 'sampleDiv'. </h4><p>Tak sorki hejterzy, ale należę do tych co lubią camelCase (sposób nazywania rzeczy tak, że nowy wyraz zaczyna się od dużej litery bez spacji np. WyrazDrugiwyraz). Jak widać wizualnie, na pierwszy rzut oka &lt;div&gt; nam nic nie zmienia. Jest to sposób oznajmienia przeglądarce, że tu będzie się znajdowało coś, co musimy włożyć w jeden 'kontenerek' i żaden z bardzo wygodnych nowych elementów semantycznych HTML5 nam tu nie pasuje. czyli ta sekcja to nie jest <span lang='en-GB'>header, nav, section, article, footer etc.</span>. Jak widać na tym przykładzie div działa podobnie jak paragraf i dodaje nam nową linię.   </p></div>
+  <div class='sampleDiv'><p>To jest przykład bloku, który nazwę sobie 'sampleDiv'.Tak sorki hejterzy, ale należę do tych co lubią camelCase (sposób nazywania rzeczy tak, że nowy wyraz zaczyna się od dużej litery bez spacji np. WyrazDrugiwyraz). Jak widać wizualnie, na pierwszy rzut oka &lt;div&gt; nam nic nie zmienia. Jest to sposób oznajmienia przeglądarce, że tu będzie się znajdowało coś, co musimy włożyć w jeden 'kontenerek' i żaden z bardzo wygodnych nowych elementów semantycznych HTML5 nam tu nie pasuje. czyli ta sekcja to nie jest <span lang='en-GB'>header, nav, section, article, footer etc.</span>. Jak widać na tym przykładzie div działa podobnie jak paragraf i dodaje nam nową linię.</p></div>
+  <p><strong>&lt;span&gt; </strong> to element bardzo podobny do &lt;div&gt; też służy on do określenia stylu dla danej rzeczy. Jednak w przypadku SPAN nie mówimy o bloku tylko o np. części tekstu. Nie będzie on nam 'psuł' wyglądu paragrafu, tak jak DIV. Pasuje tu nazwa zakreślacz. Podobnie jak div elementy te przeważnie występują z atrybutami 'class' lub 'id', które później są 'dopracowywane i ozdabiane' z CSS. Jednak tutorial ten ma odnosić się do 'czystego' HTML5 więc tu głównie SPAN występuje z atrybutami &lt;lang&gt; lub &lt;abbr&gt; i służy do zmiany np. jednego wyrazy w paragrafie.   </p>
 
   
 </body> 
