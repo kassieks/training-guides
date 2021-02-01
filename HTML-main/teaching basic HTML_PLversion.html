@@ -37,8 +37,8 @@
     <hr>z
     <h2>A teraz przykład tego jak działa &lt;pr&gt;: </h2>
     <pre>   
-        Wszystko tu mieści się w pre tagach, to pozwala mi na dowolne    
-        wręcz chaotyczne formatowanie tekst
+        Wszystko tu mieści się w &lt;pre&gt; tagach, to pozwala mi na dowolne    
+        wręcz chaotyczne formatowanie tekstu
                          ____
                    .---'-    \
       .-----------/           \
@@ -76,7 +76,7 @@
     <ul>
       <li><strong>ID</strong> attribute - jest on używany do - jak nazwa wskazuje (surprise, surprise 😉 ) - identyfikacji czegoś np. paragrafu, żeby później coś z nim zrobić np. zrobić link do innego elementu w HTML lub dodać stylizację, używając CSS (więcej na ten temat w przewodniku po CSS link: ),Teraz chcę, żebyście pamiętali o tym, że każda nazwa id musi być unikalna. Żeby nie było niepotrzebnych kłopotów. Np. jeżeli nazwiemy coś "ważny_paragraf" to wszystko co będzie miało tą nazwę będzie objęte naszymi zmianami. Każdy tag może mieć tylko jeden ID.  </li><br>
       <li><strong>CLASS</strong> attribute. Jest bardzo podobny do ID. To taki wielki worek na wszystkie pojedyncze ID woreczki. Powiedzmy, że robisz stronkę z przepisami i chcesz, żeby one wszystkie wyglądały tak samo. Dodajesz więc CLASS "przepisy". Różnica polega na tym, że Tag może mieć więcej niż jeden CLASS. Konkretniejsze przykłady będą w fundamentach CSS.  </li> <br> 
-      <li><strong>LANG</strong> attribute. Kolejnym ważnym attribute, o którym warto wspomnieć to 'lang'. Stosuje się go do sprecyzowania języka tekstu danego elementu. Jest to ważne ponieważ na podstawie tego przeglądarki adaptują swoje ustawienia, co usprawnia doświadczenie użytkownika i jest szczególnie pomocne dla użytkowników korzystających z np. czytników ekranu.</li> <br>
+      <li><strong>LANG</strong> attribute. Kolejnym ważnym attribute, o którym warto wspomnieć to '<span lang ='en -GB'>lang</span>.' Stosuje się go do sprecyzowania języka tekstu danego elementu. Jest to ważne ponieważ na podstawie tego przeglądarki adaptują swoje ustawienia, co usprawnia doświadczenie użytkownika i jest szczególnie pomocne dla użytkowników korzystających z np. czytników ekranu.</li> <br>
     <li><strong>ALT</strong> attribute. Warto też wspomnieć o attribute o nazwie 'alt' Stosuje się go do opisywania obrazków na stronie. Jeżeli ktoś ich nie widzi, bo np. źle się załadują, albo ktoś ma problemy ze wzrokiem, będzie w stanie z alt tekstu dowiedzieć się co powinno w tym miejscu się znajdować. Pomaga to też w pozycjonowaniu strony, ale o tym później. Przykład w obrazkach na tej stronie. </li></ul>
 <!--TODO dodać link do projektu CSS-->
       <h3>Global i Non-Global Attributes:</h3>
@@ -114,6 +114,11 @@
    <details>
      <summary>Innym ciekawym znacznikiem/tagiem jest &lt;<strong>details</strong>&gt; (naciśnij na trójkącik  żeby dowiedzieć się więcej...</summary> Jak ukazuje ten przykład pozwala nam to na rozwinięcie daleszej treści bez konieczności stosowania JavaScript
   </details> 
+  <h3>Div i span:</h3>
+  <p>Nie da się omawiać tagów/znaczników bez omówienia <strong>&lt;div&gt;</strong> i <strong>&lt;span&gt;</strong>, chyba najczęściej stosowanych elementów HTML. Z pojawieniem się znaczników semantycznych w HTML5 ich popularność powinna zmaleć (powinno się częściej używać dostępnych znaczników semantycznych, niż ogólnikowego div.), aczkolwiek nadal są to podstawowe elementy stosowane do formatowania tekstu </p>
+  <h3>Czym się różni <strong>&lt;div&gt;</strong> od <strong>&lt;span&gt;</strong>?</h3>
+  <p><strong>&lt;div&gt;</strong> to tzw. blokowy elemen z ang. <span lang='en-GB'>'block level element'</span> oznacza to, że może on w sobie zawierać inne elementy i stosuje piszę się go w nowej linii kodu np.</p>
+  <div class='sampleDiv'><h4>To jest przykład bloku, który nazwę sobie 'sampleDiv'. </h4><p>Tak sorki hejterzy, ale należę do tych co lubią camelCase (sposób nazywania rzeczy tak, że nowy wyraz zaczyna się od dużej litery bez spacji np. WyrazDrugiwyraz). Jak widać wizualnie, na pierwszy rzut oka &lt;div&gt; nam nic nie zmienia. Jest to sposób oznajmienia przeglądarce, że tu będzie się znajdowało coś, co musimy włożyć w jeden 'kontenerek' i żaden z bardzo wygodnych nowych elementów semantycznych HTML5 nam tu nie pasuje. czyli ta sekcja to nie jest <span lang='en-GB'>header, nav, section, article, footer etc.</span>. Jak widać na tym przykładzie div działa podobnie jak paragraf i dodaje nam nową linię.   </p></div>
 
   
 </body> 
