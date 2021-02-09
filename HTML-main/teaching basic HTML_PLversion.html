@@ -7,11 +7,15 @@
 </head> 
 <body>
     <!--To przykład komentarza. Po co są komentarze? Po to żeby łatwiej się połapać o co chodzi w naszym kodzie. Pomoże to i nam i innym osobom, które będą z nim pracowały .-->
-    <header> <!--wygląda jakby ten header nic nie robił,ro tylko pozory. Pomaga on przeglądarce 'zrozumież naszą stronę'-->
-    <h1>Jak łatwo zrobić stronkę internetową używając podstaw HTML...</h1> 
+  <header> <!--wygląda jakby ten header nic nie robił,ro tylko pozory. Pomaga on przeglądarce 'zrozumieć naszą stronę'-->
+    <h1>Naucz się podstaw HTML5 na przykładzie tej strony</h1> 
+    <hr>
   </header>
-    <h2>Ilustrowane przykładem tej strony. Jak to ma działać?
-    </h2>
+  <nav>
+    <p>Spis treści: <span>Instrukcja obsługi tego projektu</span></p> 
+  </nav>
+  <hr>
+    <h2> Jak to ma działać?</h2>
     <p>Pytasz <q> Jak to działa?</q> To proszę, ładny przykład dwóch sposobów używania cytatów. Ten pierwszy to cytat w tekście. A tu niżej mamy blok z cytatem:  
     <blockquote>
         Pomysł jest taki: ta strona będzie łatwym do zrozumienia przykładem prostych podstaw HTML. Będzie też wersja z CSS link:     i wersja z JavaScript link:     
@@ -23,7 +27,7 @@
     &darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;</p> 
 <!--TODO: WSTAWIĆ LINK--> 
     <hr>
-    <h2>To jeszcze dodam listy</h2>
+    <h2>Listy</h2>
       <h3>Zacznę od &lt;ul&gt; czyli <mark><em>Unordered List</em> </mark>, a wygląda ona tak:</h3>
       <ul>
         <li>pierwsza rzecz</li>
@@ -121,8 +125,23 @@
   <h3>Czym się różni <strong>&lt;div&gt;</strong> od <strong>&lt;span&gt;</strong>?</h3>
   <p><strong>&lt;div&gt;</strong> to tzw. blokowy element z ang. <span lang='en-GB'>'block level element'</span> oznacza to, że może on w sobie zawierać inne elementy i stosuje piszę się go w nowej linii kodu np.</p>
   <div class='sampleDiv'><p>To jest przykład bloku, który nazwę sobie 'sampleDiv'.Tak sorki hejterzy, ale należę do tych co lubią camelCase (sposób nazywania rzeczy tak, że nowy wyraz zaczyna się od dużej litery bez spacji np. WyrazDrugiwyraz). Jak widać wizualnie, na pierwszy rzut oka &lt;div&gt; nam nic nie zmienia. Jest to sposób oznajmienia przeglądarce, że tu będzie się znajdowało coś, co musimy włożyć w jeden 'kontenerek' i żaden z bardzo wygodnych nowych elementów semantycznych HTML5 nam tu nie pasuje. czyli ta sekcja to nie jest <span lang='en-GB'>header, nav, section, article, footer etc.</span>. Jak widać na tym przykładzie div działa podobnie jak paragraf i dodaje nam nową linię.</p></div>
-  <p><strong>&lt;span&gt; </strong> to element bardzo podobny do &lt;div&gt; też służy on do określenia stylu dla danej rzeczy. Jednak w przypadku SPAN nie mówimy o bloku tylko o np. części tekstu. Nie będzie on nam 'psuł' wyglądu paragrafu, tak jak DIV. Pasuje tu nazwa zakreślacz. Podobnie jak div elementy te przeważnie występują z atrybutami 'class' lub 'id', które później są 'dopracowywane i ozdabiane' z CSS. Jednak tutorial ten ma odnosić się do 'czystego' HTML5 więc tu głównie SPAN występuje z atrybutami &lt;lang&gt; lub &lt;abbr&gt; i służy do zmiany np. jednego wyrazy w paragrafie.   </p>
-
-  
+  <p><strong>&lt;span&gt; </strong> to element bardzo podobny do &lt;div&gt; też służy on do określenia stylu dla danej rzeczy. Jednak w przypadku SPAN nie mówimy o bloku tylko o np. części tekstu. Nie będzie on nam 'psuł' wyglądu paragrafu. Pasuje tu nazwa zakreślacz. Podobnie jak div elementy te przeważnie występują z atrybutami 'class' lub 'id', które później są 'dopracowywane i ozdabiane' z CSS. Tutorial ten ma odnosić się do 'czystego' HTML5 więc tu głównie SPAN występuje z atrybutami &lt;lang&gt; lub &lt;abbr&gt; i służy do zmiany jednego słowa w paragrafie.</p>
+  <hr>
+<h2>Elementy graficzne</h2>
+<p>Wreszcie przyszła pora na obrazki 😊 </p>
+<img src="https://miro.medium.com/max/2500/1*sBgc62DM_qjLOnhd-c0-Yw.jpeg" alt="puppy coding" width="625px">
+<p>Załączenie obrazka na stronę jest bardzo proste, stosujemy do tego elementu o nazwie &lt;img&gt; nazwa pochodzi on angielskiego <span lang='en-GB'>image</span>. Element ten ma dwa wymagane atrybuty:</p>
+<ul>
+  <li><strong>'src'</strong> z ang. <span lang="en-GB">source</span> czyli źródło naszego obrazka, tu mamy dwie opcje:link do obrazka w necie lub ścieżka do obrazka w folderze projektu naszej stronie. Ta druga opcja jest bezpieczniejsza ponieważ nie jesteśmy zależni od egzystencji tego obrazka pod linkiem, który zamieściliśmy. </li>
+  <li><strong>'alt'</strong> z ang. <span lang="en-GB">alternate text for image</span>, służy do opisania obrazka w przypadku kiedy się nie załaduje lub jeśli użytkownik korzysta z czytnika ekranu.</li>
+</ul>
+<h3>Najczęściej stosowane atrybuty z ang. <span lang="en-GB">attributes</span> </h3> z elementem img to"
+<ol>
+  <li><strong>'alt'</strong>- jak wspomniałam wcześniej jest to pis obrazka dla osób, które go nie zobaczą </li>
+  <li><strong>'height' and 'width'</strong> jeżeli z jakiegoś powodu musimy określić rozmiar obrazka tylko dla tego obrazka (np. jeśli was poniesie tak jak mnie i robicie stronę tylko używając HTML). Najczęściej rozmiar obrazków określa się w CSS.</li>
+  <li><strong>'title' </strong> - pozwala nam na przeczytanie opisu obrazka jak najedziemy na niego myszką, przydatny do opisania skomplikowanego obrazka lub do ukrywania tekstu na stronie. <mark>UWAGA! nie zastąpi on 'alt' attribute </mark></li>
+</ol>
+<hr>
+<h2>Linki, links</h2>
 </body> 
 </html>
